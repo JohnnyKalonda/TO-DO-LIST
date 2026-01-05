@@ -1,52 +1,45 @@
-/* Reset de base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(57, 18, 84);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
-/* Fond général */
 body {
   min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #e5e7eb;
 }
-/* Conteneur principal */
 body > * {
   width: 100%;
 }
 body {
-  padding: 2rem;
+  padding: 1rem;
 }
-/* Carte */
-body {
+h1,
+h2,
+form,
+ul {
   max-width: 420px;
-  background-color: rgb(57, 18, 84);
-  background: transparent;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* Titres */
 h1 {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 2rem;
-  letter-spacing: 1px;
-  color: black;
 }
 h2 {
   font-size: 1rem;
   margin-bottom: 0.75rem;
   color: #94a3b8;
 }
-/* Formulaire */
 form {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
@@ -54,34 +47,29 @@ input[type="text"] {
   flex: 1;
   padding: 0.75rem 1rem;
   border-radius: 8px;
-  border: none;
-  outline: none;
-  font-size: 0.9rem;
+  border: 1px solid #1e293b;
   background-color: #020617;
   color: #e5e7eb;
-  border: 1px solid #1e293b;
 }
 input::placeholder {
   color: #64748b;
 }
 button {
-  padding: 0.75rem 1.2rem;
-  border-radius: 8px;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 0.85rem;
-  transition: all 0.2s ease;
+  transition: 0.2s ease;
 }
-/* Bouton Add */
 form button {
+  padding: 0.75rem 1.2rem;
   background-color: #3b82f6;
-  color: #ffffff;
+  color: white;
 }
 form button:hover {
   background-color: #2563eb;
 }
-/* Liste */
+/* LISTE */
 ul {
   list-style: none;
   display: flex;
@@ -96,9 +84,8 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
 }
-/* Bouton Delete */
+/* DELETE */
 li button {
   background-color: #ef4444;
   color: white;
